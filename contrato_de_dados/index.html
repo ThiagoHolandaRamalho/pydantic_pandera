@@ -291,6 +291,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#src.schema_pandera.SchemaDimCorpApolice" class="md-nav__link">
+    <span class="md-ellipsis">
+      SchemaDimCorpApolice
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -359,6 +368,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#src.schema_pandera.SchemaDimCorpApolice" class="md-nav__link">
+    <span class="md-ellipsis">
+      SchemaDimCorpApolice
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -387,7 +405,7 @@
 <a id="src.schema_pandera.SchemaCorpApolice"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code><span title="pandera.SchemaModel">SchemaModel</span></code></p>
+              Bases: <code><span title="pandera.DataFrameModel">DataFrameModel</span></code></p>
 
 
         <p>Esquema de validação para DataFrames relacionados a apólices corporativas.</p>
@@ -529,7 +547,7 @@ dos tipos e a conformidade com as regras definidas.</p>
 <span class="normal">52</span>
 <span class="normal">53</span>
 <span class="normal">54</span>
-<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SchemaCorpApolice</span><span class="p">(</span><span class="n">pa</span><span class="o">.</span><span class="n">SchemaModel</span><span class="p">):</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SchemaCorpApolice</span><span class="p">(</span><span class="n">pa</span><span class="o">.</span><span class="n">DataFrameModel</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Esquema de validação para DataFrames relacionados a apólices corporativas.</span>
 
@@ -824,6 +842,122 @@ dos tipos e a conformidade com as regras definidas.</p>
     </div>
 
 </div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<a id="src.schema_pandera.SchemaDimCorpApolice"></a>
+    <div class="doc doc-contents first">
+            <p class="doc doc-class-bases">
+              Bases: <code><a class="autorefs autorefs-internal" title="src.schema_pandera.SchemaCorpApolice" href="#src.schema_pandera.SchemaCorpApolice">SchemaCorpApolice</a></code></p>
+
+
+        <p>Esquema de validação para DataFrames relacionados a apólices corporativas.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><span title="src.schema_pandera.SchemaDimCorpApolice.nm_linha_negocio">nm_linha_negocio</span></code></td>
+            <td>
+                  <code><span title="pandera.typing.Series">Series</span>[str]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Nome da linha de negócio do produto.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="src.schema_pandera.SchemaDimCorpApolice.nm_gestor">nm_gestor</span></code></td>
+            <td>
+                  <code><span title="pandera.typing.Series">Series</span>[str]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Nome do gestor do produto.</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><span title="src.schema_pandera.SchemaDimCorpApolice.cd_gestor">cd_gestor</span></code></td>
+            <td>
+                  <code><span title="pandera.typing.Series">Series</span>[int]</code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Codigo interno do gestor do produto.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>src\schema_pandera.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">SchemaDimCorpApolice</span><span class="p">(</span><span class="n">SchemaCorpApolice</span><span class="p">):</span>
+
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Esquema de validação para DataFrames relacionados a apólices corporativas.</span>
+
+<span class="sd">    Attributes:</span>
+<span class="sd">        nm_linha_negocio (Series[str]): Nome da linha de negócio do produto.</span>
+<span class="sd">        nm_gestor (Series[str]): Nome do gestor do produto.</span>
+<span class="sd">        cd_gestor (Series[int]): Codigo interno do gestor do produto.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">nm_linha_negocio</span><span class="p">:</span> <span class="n">Series</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">Field</span><span class="p">(</span><span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Nome da linha de negócio&quot;</span><span class="p">)</span>
+    <span class="n">nm_gestor</span> <span class="p">:</span> <span class="n">Series</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">Field</span><span class="p">(</span><span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Nome do gestor&quot;</span><span class="p">)</span>
+    <span class="n">cd_gestor</span> <span class="p">:</span> <span class="n">Series</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">Field</span><span class="p">(</span><span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Código interno do gestor&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
 
 
 
