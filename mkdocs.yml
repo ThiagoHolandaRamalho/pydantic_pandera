@@ -3,6 +3,8 @@ site_name: Documentação Pipelines Innoveo
 
 theme:
   name: material
+  features:
+    - content.code.copy
 
 plugins:
   - search
@@ -10,9 +12,10 @@ plugins:
   - mermaid2:
       version: 10.0.2
 
+watch:
+  - docs
+
+
 nav:
   - Home: index.md
   - Contrato de Dados: contrato_de_dados.md
-
-watch:
-  - docs
