@@ -1,7 +1,7 @@
 # Documentação Pipeline Cyber Picpay
 
 ## Fluxo do processo
-<div style="max-width: 300px;">
+<div style="max-width: 200px;">
 ```mermaid
 
 graph TD;
