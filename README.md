@@ -29,8 +29,8 @@ plugins:
       version: 10.0.2
 
 watch:
-  - docs<
+  - docs
 
-pre><code>
+</pre></code>
 
 6.Deploy mkdocs <pre><code> mkdocs gh-deploy  </pre></code>
