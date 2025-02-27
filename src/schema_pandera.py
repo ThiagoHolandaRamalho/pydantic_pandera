@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 
-class SchemaCorpApolice(pa.SchemaModel):
+class SchemaCorpApolice(pa.DataFrameModel):
     """
     Esquema de validação para DataFrames relacionados a apólices corporativas.
 
@@ -53,3 +53,20 @@ class SchemaCorpApolice(pa.SchemaModel):
             pa.errors.SchemaError: Se os dados não atenderem aos requisitos do esquema.
         """
         return SchemaCorpApolice.validate(df)
+
+
+
+class SchemaDimCorpApolice(SchemaCorpApolice):
+
+    """
+    Esquema de validação para DataFrames relacionados a apólices corporativas.
+
+    Attributes:
+        nm_linha_negocio (Series[str]): Nome da linha de negócio do produto.
+        nm_gestor (Series[str]): Nome do gestor do produto.
+        cd_gestor (Series[int]): Codigo interno do gestor do produto.
+    
+    """
+    nm_linha_negocio: Series[str] = pa.Field(nullable=False, description="Nome da linha de negócio")
+    nm_gestor : Series[str] = pa.Field(nullable=False, description="Nome do gestor")
+    cd_gestor : Series[int] = pa.Field(nullable=False, description="Código interno do gestor")
