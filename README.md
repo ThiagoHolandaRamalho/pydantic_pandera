@@ -1,7 +1,7 @@
 ﻿# pydantic_pandera
 
-# Visite minha documentação
-![image](/pic/image.png)(https://thiagoholandaramalho.github.io/pydantic_pandera/)
+### Visite minha documentação
+[![image](/pic/image.png)](https://thiagoholandaramalho.github.io/pydantic_pandera/)
 
 # Poetry 
 
