@@ -1,0 +1,27 @@
+[project]
+name = "pydantic-pandera"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ThiagoHolandaRamalho",email = "thiago.holandarm@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "pandera (>=0.22.1,<0.23.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "duckdb (>=1.2.0,<2.0.0)",
+    "dask (>=2025.2.0,<2026.0.0)",
+    "mkdocs-mermaid2-plugin (>=1.2.1,<2.0.0)",
+    "mkdocs-material (>=9.6.4,<10.0.0)",
+    "mkdocstrings[python] (>=0.28.1,<0.29.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "numpy (>=2.2.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
